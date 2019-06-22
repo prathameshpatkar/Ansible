@@ -13,8 +13,8 @@
   tasks:
     - name: install winzip
       win_chocolatey:
-       Name: winzip
-        Version: 9.0
+       Name: 7zip
+        Version: 19.0
 
   # Handlers: handlers that are executed as a notify key from a task
 
