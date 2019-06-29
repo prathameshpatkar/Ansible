@@ -1,8 +1,15 @@
 [simplegroup]
 srv1
 
+
 [windetails]
-ansiwindows ansible_connection=winrm ansible_user=administrator ansible_password=ntms123# ansible_port=5985 ansible_winrm_server_cert_validation=ignore ansible_winrm_transport=ntlm
+ansiwindows ansible_connection=winrm ansible_user=administrator ansible_password=ntms123# ansible_port=5986 ansible_winrm_server_cert_validation=ignore ansible_winrm_transport=ntlm
+
+
+
+[wingrp]
+srv1
+
 
 [simplegroup:vars]
 ansible_connection=winrm
@@ -11,6 +18,4 @@ ansible_password=ntms123#
 ansible_port=5985
 ansible_winrm_server_cert_validation=ignore
 ansible_winrm_transport=ntlm
-
-
 

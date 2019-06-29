@@ -11,11 +11,12 @@
 
   # Task: the list of tasks that will be executed within the playbook
   tasks:
-    - name: install winzip
+    - name: INstall 7 zip
       win_chocolatey:
-       Name: 7zip
-        Version: 19.0
-
+        name: 7zip  
+        
+        
+      
   # Handlers: handlers that are executed as a notify key from a task
 
   # Roles: list of roles to be imported into the play
