@@ -9,7 +9,7 @@
       state: stopped
       
   vars_files:
-  servicesname.yml
+    - servicesname.yml
         
 
     
