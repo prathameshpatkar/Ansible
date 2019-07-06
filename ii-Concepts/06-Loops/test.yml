@@ -6,11 +6,9 @@
   tasks: 
     - name: stopservices
       win_service:
-        name: {{vars_file}}
-        state: stopped
+      state: stopped
       
-
-  vars_file:
+  vars_files:
   servicesname.yml
         
 
