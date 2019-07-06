@@ -4,8 +4,9 @@
   gather_facts: true # this will make not to gather facts before running tasks
 
   tasks: 
-    - name: stop services
+    - name: stopservices
       win_service:
+        name: {{vars_file}}
         state: stopped
       
 
