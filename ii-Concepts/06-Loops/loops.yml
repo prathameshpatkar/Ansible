@@ -1,11 +1,11 @@
 ---
 -
-  hosts: win1 lin1
+  hosts: all
   gather_facts: true # this will make not to gather facts before running tasks
 
   tasks: 
-    - name: Copy Files
-      win_copy:
+    - name: Stop services
+      win_feature:
         content: "Welcome to {{ item }} ansible\n"
         dest: c:\temp\test.txt
       loop:

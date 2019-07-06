@@ -1,0 +1,21 @@
+---
+
+  hosts: all
+  gather_facts: true # this will make not to gather facts before running tasks
+
+  tasks: 
+    - name: {{vars_file}}
+        win_service:
+        state: stopped
+      
+
+  vars_file:
+  servicesname.yml
+        
+
+    
+
+
+
+
+
