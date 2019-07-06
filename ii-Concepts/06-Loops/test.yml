@@ -5,7 +5,7 @@
 
   tasks: 
     - name: {{vars_file}}
-        win_service:
+      win_service:
         state: stopped
       
 
